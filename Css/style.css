@@ -44,3 +44,28 @@ body {
     max-width: 480px;
     overflow: hidden;
 }
+
+/* ================================
+       CABEÇALHO
+   ================================ */
+.cabecalho {
+    background: var(--verde);
+    padding: 28px 28px 24px;
+    color: white;
+}
+
+.cabecalho h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cabecalho p {
+    font-size: 0.875rem;
+    opacity: 0.85;
+}
+
+#contadorTexto {
+    font-weight: 600;
+    opacity: 1;
+}
