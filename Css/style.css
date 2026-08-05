@@ -326,3 +326,21 @@ body {
 #btnLimpar:hover {
     color: var(--vermelho);
 }
+
+/* ================================
+   MENSAGEM DE ERRO
+   ================================ */
+
+.campo-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem-erro {
+    min-height: 18px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--vermelho);
+    font-weight: 500;
+}
