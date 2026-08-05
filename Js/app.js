@@ -92,9 +92,9 @@ botoesFiltro.forEach(function (botao) {
 // FUNÇÃO PARA ADICIONAR TAREFAS
 // ==============================
 
-function adicionarTarefa(){
+function adicionarTarefa() {
 
-    if(inptTarefa.value.trim() === ""){
+    if (inptTarefa.value.trim() === "") {
         mensagemErro.textContent = "Digite uma tarefa.";
         return;
     }
@@ -118,3 +118,24 @@ function adicionarTarefa(){
 
     botaoDelet.classList.add('tarefa__deletar');
     botaoDelet.textContent = "✕";
+
+    // Concluir tarefa
+    botaoCheck.addEventListener('click', function () {
+
+        const status = item.getAttribute('data-feita');
+
+        if (status === 'false') {
+
+            item.setAttribute('data-feita', 'true');
+            item.classList.add('tarefa--feita');
+
+        } else {
+
+            item.setAttribute('data-feita', 'false');
+            item.classList.remove('tarefa--feita');
+
+        }
+
+        atualizarContador();
+
+    });
