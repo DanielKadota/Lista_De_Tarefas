@@ -32,3 +32,15 @@ body {
     justify-content: center;
     padding: 40px 16px;
 }
+
+/* ================================
+       CARD PRINCIPAL
+   ================================ */
+.app {
+    background: var(--branco);
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 480px;
+    overflow: hidden;
+}
