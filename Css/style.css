@@ -69,3 +69,59 @@ body {
     font-weight: 600;
     opacity: 1;
 }
+
+/* ================================
+       FORMULÁRIO DE ADICIONAR TAREFA
+   ================================ */
+.formulario {
+    display: flex;
+    gap: 8px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+#inputTarefa {
+    flex: 1;
+    height: 44px;
+    padding: 0 14px;
+    border: 1.5px solid var(--cinza-borda);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--texto);
+    background: var(--cinza-fundo);
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+#inputTarefa:focus {
+    border-color: var(--verde);
+    background: white;
+}
+
+#inputTarefa::placeholder {
+    color: var(--texto-leve);
+}
+
+#btnAdicionar {
+    height: 44px;
+    padding: 0 18px;
+    background: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+#btnAdicionar:hover {
+    background: #16a34a;
+}
+
+#btnAdicionar:active {
+    transform: scale(0.97);
+}
