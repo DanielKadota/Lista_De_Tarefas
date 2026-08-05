@@ -159,3 +159,15 @@ body {
     border-color: var(--verde);
     color: var(--verde);
 }
+
+/* ================================
+       LISTA DE TAREFAS
+   ================================ */
+.lista-wrap {
+    padding: 8px 0;
+    min-height: 200px;
+}
+
+#listaTarefas {
+    list-style: none;
+}
