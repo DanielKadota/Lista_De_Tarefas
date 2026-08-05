@@ -88,3 +88,33 @@ botoesFiltro.forEach(function (botao) {
     });
 
 });
+// ==============================
+// FUNÇÃO PARA ADICIONAR TAREFAS
+// ==============================
+
+function adicionarTarefa(){
+
+    if(inptTarefa.value.trim() === ""){
+        mensagemErro.textContent = "Digite uma tarefa.";
+        return;
+    }
+
+    mensagemErro.textContent = "";
+
+    const item = document.createElement('li');
+    const botaoCheck = document.createElement('button');
+    const span = document.createElement('span');
+    const botaoDelet = document.createElement('button');
+
+
+    item.classList.add('tarefa');
+    item.setAttribute('data-id', contadorId);
+    item.setAttribute('data-feita', 'false');
+
+    botaoCheck.classList.add('tarefa__check');
+
+    span.classList.add('tarefa__texto');
+    span.textContent = inptTarefa.value;
+
+    botaoDelet.classList.add('tarefa__deletar');
+    botaoDelet.textContent = "✕";
