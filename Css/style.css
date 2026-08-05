@@ -1,0 +1,14 @@
+/* ================================
+       VARIÁVEIS DE COR E ESTILO
+       ================================ */
+:root {
+  --verde: #22c55e;
+  --verde-claro: #dcfce7;
+  --cinza-fundo: #f1f5f9;
+  --cinza-borda: #e2e8f0;
+  --texto: #1e293b;
+  --texto-leve: #94a3b8;
+  --branco: #ffffff;
+  --vermelho: #ef4444;
+  --sombra: 0 2px 12px rgba(0,0,0,0.08);
+}
