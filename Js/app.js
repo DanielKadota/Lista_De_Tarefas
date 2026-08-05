@@ -163,3 +163,8 @@ function adicionarTarefa() {
     atualizarContador();
 
 }
+// ==============================
+// EVENTOS
+// ==============================
+
+btnAdd.addEventListener('click', adicionarTarefa);
