@@ -296,3 +296,33 @@ body {
     font-size: 0.85rem;
     text-align: center;
 }
+
+/* ================================
+       RODAPÉ
+   ================================ */
+.rodape {
+    padding: 14px 24px;
+    border-top: 1px solid var(--cinza-borda);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contagemRodape {
+    font-size: 0.8rem;
+    color: var(--texto-leve);
+}
+
+#btnLimpar {
+    font-size: 0.8rem;
+    color: var(--texto-leve);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.2s;
+}
+
+#btnLimpar:hover {
+    color: var(--vermelho);
+}
