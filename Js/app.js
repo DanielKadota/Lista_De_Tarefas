@@ -39,3 +39,37 @@ function atualizarContador() {
 
     contadorTexto.textContent = contadorPendentes;
 }
+// ==============================
+// VERIFICAR SE A TAREFAS
+// ==============================
+
+function filtrarTarefas(tipo) {
+    const tarefas = document.querySelectorAll('.tarefa');
+
+    tarefas.forEach(function (tarefa) {
+
+        const statusTarefa = tarefa.getAttribute('data-feita');
+
+        if (tipo === "todas") {
+
+            tarefa.style.display = 'flex';
+
+        } else if (tipo === "pendentes") {
+
+            if (statusTarefa === 'false') {
+                tarefa.style.display = 'flex';
+            } else {
+                tarefa.style.display = 'none';
+            }
+        } else if (tipo === "concluidas") {
+
+            if (statusTarefa === 'true') {
+                tarefa.style.display = 'flex';
+            } else {
+                tarefa.style.display = 'none';
+            }
+        }
+
+    });
+
+}
