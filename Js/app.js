@@ -7,3 +7,13 @@ const inptTarefa = document.querySelector('#inputTarefa');
 const mensagemErro = document.querySelector('#mensagemErro');
 const listaTarefas = document.querySelector('#listaTarefas');
 const contadorTexto = document.querySelector('#contadorTexto');
+
+//BOTOES
+const botoesFiltro = document.querySelectorAll('.filtro');
+
+
+// ==============================
+// VARIÁVEL
+// ==============================
+
+let contadorId = 1;
