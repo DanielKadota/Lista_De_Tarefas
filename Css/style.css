@@ -125,3 +125,37 @@ body {
 #btnAdicionar:active {
     transform: scale(0.97);
 }
+
+/* ================================
+       FILTROS
+   ================================ */
+.filtros {
+    display: flex;
+    gap: 6px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.filtro {
+    padding: 6px 14px;
+    border: 1.5px solid var(--cinza-borda);
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--texto-leve);
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filtro:hover {
+    border-color: var(--verde);
+    color: var(--verde);
+}
+
+.filtro--ativo {
+    background: var(--verde-claro);
+    border-color: var(--verde);
+    color: var(--verde);
+}
