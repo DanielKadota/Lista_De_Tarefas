@@ -171,3 +171,99 @@ body {
 #listaTarefas {
     list-style: none;
 }
+
+/* ================================
+       CADA ITEM DA LISTA
+   ================================ */
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--cinza-borda);
+    transition: background 0.15s;
+}
+
+.tarefa:last-child {
+    border-bottom: none;
+}
+
+.tarefa:hover {
+    background: var(--cinza-fundo);
+}
+
+.tarefa__check {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--cinza-borda);
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.tarefa__check:hover {
+    border-color: var(--verde);
+}
+
+.tarefa--feita .tarefa__check {
+    background: var(--verde);
+    border-color: var(--verde);
+}
+
+.tarefa__check::after {
+    content: '✓';
+    font-size: 12px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tarefa--feita .tarefa__check::after {
+    opacity: 1;
+}
+
+/* Texto da tarefa */
+.tarefa__texto {
+    flex: 1;
+    font-size: 0.9375rem;
+    color: var(--texto);
+    transition: all 0.2s;
+}
+
+.tarefa--feita .tarefa__texto {
+    text-decoration: line-through;
+    color: var(--texto-leve);
+}
+
+/* Botão de deletar */
+.tarefa__deletar {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    border: none;
+    background: none;
+    color: var(--texto-leve);
+    cursor: pointer;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.tarefa:hover .tarefa__deletar {
+    opacity: 1;
+}
+
+.tarefa__deletar:hover {
+    background: #fee2e2;
+    color: var(--vermelho);
+}
