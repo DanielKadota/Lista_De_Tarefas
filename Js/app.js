@@ -73,3 +73,18 @@ function filtrarTarefas(tipo) {
     });
 
 }
+// ==============================
+// BOTOES
+// ==============================
+
+botoesFiltro.forEach(function (botao) {
+
+    botao.addEventListener('click', function () {
+
+        const tipo = botao.getAttribute('data-filtro');
+
+        filtrarTarefas(tipo);
+
+    });
+
+});
