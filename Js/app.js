@@ -148,3 +148,18 @@ function adicionarTarefa() {
         atualizarContador();
 
     });
+
+    item.appendChild(botaoCheck);
+    item.appendChild(span);
+    item.appendChild(botaoDelet);
+
+    listaTarefas.appendChild(item);
+
+
+    contadorId++;
+
+    inptTarefa.value = "";
+
+    atualizarContador();
+
+}
