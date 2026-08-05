@@ -139,3 +139,12 @@ function adicionarTarefa() {
         atualizarContador();
 
     });
+
+    // Deletar tarefa
+    botaoDelet.addEventListener('click', function () {
+
+        item.remove();
+
+        atualizarContador();
+
+    });
