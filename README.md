@@ -44,4 +44,5 @@ Este projeto permite adicionar, concluir, remover e filtrar tarefas, além de ex
 
 ## Autor
 
-Desenvolvido por **Daniel Bryan Conceição Kadota**.
+
+
