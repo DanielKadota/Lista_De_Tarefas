@@ -7,6 +7,7 @@ const inptTarefa = document.querySelector('#inputTarefa');
 const mensagemErro = document.querySelector('#mensagemErro');
 const listaTarefas = document.querySelector('#listaTarefas');
 const contadorTexto = document.querySelector('#contadorTexto');
+const estadoVazio = document.querySelector('#estadoVazio');
 
 //BOTOES
 const botoesFiltro = document.querySelectorAll('.filtro');
@@ -39,6 +40,26 @@ function atualizarContador() {
 
     contadorTexto.textContent = contadorPendentes;
 }
+
+// ==============================
+// ESTADO VAZIO
+// ==============================
+
+function atualizarEstadoVazio() {
+
+    const tarefas = document.querySelectorAll('.tarefa');
+
+    if (tarefas.length === 0) {
+
+        estadoVazio.style.display = 'flex';
+    } else {
+        estadoVazio.style.display = 'none';
+    }
+
+}
+
+
+
 // ==============================
 // VERIFICAR SE A TAREFAS
 // ==============================
@@ -138,6 +159,7 @@ function adicionarTarefa() {
 
         atualizarContador();
 
+
     });
 
     // Deletar tarefa
@@ -146,6 +168,7 @@ function adicionarTarefa() {
         item.remove();
 
         atualizarContador();
+        atualizarEstadoVazio();
 
     });
 
@@ -161,8 +184,10 @@ function adicionarTarefa() {
     inptTarefa.value = "";
 
     atualizarContador();
+    atualizarEstadoVazio();
 
 }
+
 // ==============================
 // EVENTOS
 // ==============================
