@@ -43,6 +43,11 @@ Este projeto permite adicionar, concluir, remover e filtrar tarefas, além de ex
 - Tornar o projeto mais acessível utilizando atributos ARIA.
 
 ## Autor
+-Daniel Bryan Conceição Kadota
+
+## Link para o site
+
+https://lista-de-tarefas-rho-six.vercel.app/
 
 
 
